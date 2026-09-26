@@ -9,41 +9,61 @@
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
     h1, h2 { line-height: 1.2; }
     .box { border: 1px solid #8884; border-radius: 8px; padding: 1rem 1.1rem; margin: 1rem 0; }
+    .cta { border: 3px solid #1a73e8; border-radius: 10px; padding: 1.2rem 1.3rem; margin: 1rem 0 1.5rem; }
+    .cta h1 { font-size: 2rem; margin: 0 0 .6rem; }
+    .msg { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92rem; border-left: 3px solid #8888; padding: .4rem .7rem; margin: .4rem 0 .8rem; }
     ol, ul { padding-left: 1.2rem; }
     a { color: inherit; }
     footer { margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; }
   </style>
 </head>
 <body>
-  <h1>SaftBot SMS Program</h1>
-  <p>Operated by <strong>Evan Moyle</strong> (sole proprietor). Brand / program: <strong>SaftBot</strong>. SMS sender: <strong>+1 (218) 501-5984</strong>.</p>
-
-  <div class="box">
-    <h2>Who sends / who receives / why</h2>
-    <p><strong>Sender:</strong> Evan Moyle via SaftBot.</p>
-    <p><strong>Recipients:</strong> adult friends who individually opt in.</p>
-    <p><strong>Purpose:</strong> optional informational SMS tips about roster and schedule decisions for a private recreational sports league among friends. These messages are <strong>not</strong> gambling, betting, wagering, sweepstakes, or contests for money.</p>
-    <p><strong>Frequency:</strong> up to 4 messages per week during the season. Fewer in the offseason.</p>
-    <p><strong>Message and data rates may apply.</strong></p>
+  <div class="cta" id="cta">
+    <h1>Text START to +1 (218) 501-5984</h1>
+    <p><strong>to receive SaftBot league tip texts from Evan Moyle.</strong></p>
+    <p>By texting <strong>START</strong> to <strong>+1 (218) 501-5984</strong>, you agree to receive recurring informational SMS text messages from SaftBot (Evan Moyle) about a private recreational sports league. Up to 4 msgs/week in season. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Reply <strong>HELP</strong> for help, <strong>STOP</strong> to cancel.</p>
+    <p>You will be asked to reply <strong>YES</strong> to confirm before any recurring messages are sent.</p>
+    <p><a href="https://evanmoyle.github.io/saftbot-sms/privacy.html">Privacy Policy</a> · <a href="https://evanmoyle.github.io/saftbot-sms/terms.html">Terms &amp; Conditions</a></p>
   </div>
 
+  <h2>SaftBot SMS Program</h2>
+  <p>Operated by <strong>Evan Moyle</strong> (sole proprietor). Brand / program: <strong>SaftBot</strong>. SMS sender: <strong>+1 (218) 501-5984</strong>.</p>
+
   <div class="box" id="opt-in">
-    <h2>How to opt in</h2>
-    <p>Participation is voluntary. There is no purchase required. Consent is collected specifically for SaftBot SMS only.</p>
-    <p><strong>Keyword opt-in:</strong> Text <strong>START</strong> or <strong>YES</strong> to <strong>+1 (218) 501-5984</strong>. You will receive a confirmation text.</p>
-    <p>Only people who have given consent are messaged. Mobile numbers are not shared with third parties or affiliates for marketing or promotional purposes (see Privacy Policy).</p>
+    <h2>How to opt in (by text message only)</h2>
+    <p>Opt-in is <strong>by text message only</strong>. There is <strong>no web form</strong> and no phone numbers are collected on this website. Participation is voluntary; no purchase is required. Consent is for SaftBot SMS only.</p>
+    <ol>
+      <li>Text <strong>START</strong> to <strong>+1 (218) 501-5984</strong>.</li>
+      <li>You receive this confirmation request:
+        <div class="msg">SaftBot (Evan Moyle): Reply YES to confirm you want recurring informational league tip texts. Up to 4 msgs/wk in season. Msg &amp; data rates may apply. Reply STOP to cancel.</div>
+      </li>
+      <li>Reply <strong>YES</strong> to confirm. You then receive:
+        <div class="msg">SaftBot (Evan Moyle): You're subscribed to informational league tip texts. Up to 4 msgs/week in season. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel. Privacy: https://evanmoyle.github.io/saftbot-sms/privacy.html</div>
+      </li>
+    </ol>
+    <p>If you do not reply YES, you will not receive recurring messages. Mobile numbers are not shared with third parties or affiliates for marketing or promotional purposes (see <a href="./privacy.html">Privacy Policy</a>).</p>
+  </div>
+
+  <div class="box">
+    <h2>What you will receive</h2>
+    <p><strong>Sender:</strong> Evan Moyle via SaftBot. <strong>Recipients:</strong> adult friends who individually opt in by text.</p>
+    <p><strong>Content:</strong> informational tips about roster and schedule decisions for a private recreational sports league among friends. Messages are informational only and do not offer or promote any paid contests, prizes, or money transactions.</p>
+    <p><strong>Frequency:</strong> up to 4 messages per week during the season; fewer in the offseason.</p>
+    <p><strong>Message and data rates may apply.</strong></p>
   </div>
 
   <div class="box">
     <h2>Help &amp; opt out</h2>
-    <p><strong>Reply STOP</strong> to cancel (honored immediately). <strong>Reply HELP</strong> for help.</p>
+    <p><strong>Reply STOP</strong> to cancel (honored immediately). <strong>Reply HELP</strong> for help. HELP reply:</p>
+    <div class="msg">SaftBot (Evan Moyle): For help, email evanmoyle@gmail.com or call +1 952-818-4105. Msg &amp; data rates may apply. Reply STOP to cancel.</div>
     <p>Support: Evan Moyle — <a href="mailto:evanmoyle@gmail.com">evanmoyle@gmail.com</a> — +1 (952) 818-4105</p>
     <p>Carriers are not liable for delayed or undelivered messages.</p>
   </div>
 
   <p>
     <a href="./privacy.html">Privacy Policy</a> ·
-    <a href="./terms.html">Terms &amp; Conditions</a>
+    <a href="./terms.html">Terms &amp; Conditions</a> ·
+    <a href="./cta.png">Call-to-action image</a>
   </p>
 
   <footer>
